@@ -25,6 +25,7 @@
 }
 
 #principal{
+    min-height: 100hv;
     background-image: url(/assets/pictures/starry-sky-2675322_1280.jpg);
     background-size: cover;
 }
