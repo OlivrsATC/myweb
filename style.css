@@ -1,0 +1,28 @@
+.logo{
+    background-color: rgb(178, 206, 230);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 0;
+}
+
+.imgLogo{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.pLogo{
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.background-img{
+    z-index: 2;
+    width: auto;
+}
