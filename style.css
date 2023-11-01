@@ -48,3 +48,44 @@
     width: 75px;
     height: 35px;
 }
+
+.container{
+    display: grid;
+    grid-gap: 5px;
+    grid-column: repeat(4, 50%);
+    grid-template-areas: "header header header header" 
+    "sidebar main photo button"
+    "footer footer footer footer";
+    justify-content: center;
+}
+
+.item{
+    background-color: #1e69ff;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+}
+
+.header{
+    grid-area: header;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+
+.photo{
+    grid-area: photo;
+}
+
+.start-button{
+    grid-area: button;
+}   
+ 
