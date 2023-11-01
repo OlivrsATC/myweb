@@ -1,27 +1,20 @@
 .logo{
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
-    z-index: 0;
+    align-items: center;
 }
 
 .imgLogo{
     padding: 10px;
     margin: 10px;
-    height: 100px;
-    width: 100px;
-    border-radius: 60px;
+    height: 200px;
+    width: 200px;
+    border-radius: 1100px;
 }
 
 .pLogo{
-    color: aliceblue;
-    z-index: 1;
-    align-items: center;
-    margin-top: 40px;
-    text-align: center;
     font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    margin-left: 300px;
 }
 
 #principal{
@@ -30,62 +23,52 @@
     background-size: cover;
 }
 
-.navbar{
-    z-index: 1;
-    color: antiquewhite;
-}
-
-.start p{
-    align-items: center;
-    color: wheat;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-size: 35px;
-}
-
-.start button{
-    width: 75px;
-    height: 35px;
-}
-
 .container{
     display: grid;
     grid-gap: 5px;
-    grid-column: repeat(4, 50%);
     grid-template-areas: "header header header header" 
-    "sidebar main photo button"
+    "sidebar main main photo"
     "footer footer footer footer";
     justify-content: center;
 }
 
 .item{
-    background-color: #1e69ff;
-    color: #ffffff;
+    background-color: transparent;
+    color: #cfc7c7;
     text-align: center;
     padding: 5px;
+    font-size: 30px;
 }
 
 .header{
     grid-area: header;
+    font-size: 200px;
+    color: aliceblue;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .sidebar{
     grid-area: sidebar;
+    background-color: rgb(243, 235, 235);
+    color: black;
 }
 
 .main{
     grid-area: main;
+  
 }
 
 .footer{
     grid-area: footer;
+    background-color: rgb(243, 235, 235);
+    color: black;
 
 .photo{
     grid-area: photo;
+   
 }
-
-.start-button{
-    grid-area: button;
-}   
- 
