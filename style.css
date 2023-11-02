@@ -5,13 +5,23 @@
     align-items: center;
 }
 
+
+
 .imgLogo{
     padding: 10px;
     margin: 10px;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 1100px;
     background-color: rgb(44, 44, 44);
+    transition: ease width 2s, ease height 2s;
+    cursor: pointer;
+}
+
+.imgLogo:hover{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(24, 24, 24);
 }
 
 .pLogo{
@@ -25,7 +35,6 @@
 #principal{
     min-height: 100hv;
     background-color: black;
-    background-size: cover;
 }
 
 .container{
