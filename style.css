@@ -10,6 +10,7 @@
     height: 200px;
     width: 200px;
     border-radius: 1100px;
+    background-color: black;
 }
 
 .pLogo{
@@ -30,6 +31,7 @@
     "sidebar main main photo"
     "footer footer footer footer";
     justify-content: center;
+    grid-template-areas: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .item{
@@ -86,6 +88,8 @@
     margin: 10px 0 10px 30px;
     width: 150px;
     border-radius: 75px;
+    padding: 3px;
+    background-color: rgb(219, 194, 243);
 }
     
 button{
@@ -125,6 +129,6 @@ button::before{
 
     100%{
 
-        background-position: 0 0;
+        background-position: 0;
     }
 }
