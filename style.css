@@ -60,13 +60,22 @@
 
 .main{
     grid-area: main;
-  
 }
 
 .footer{
     grid-area: footer;
-    background-color: rgb(243, 235, 235);
-    color: black;
+    color: rgb(209, 173, 173);
+    align-irgb(250, 238, 238) center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    background-image: url(/assets/pictures/background-img.jpeg);
+}
+ 
+   
 
 .photo{
     grid-area: photo;
