@@ -1,3 +1,4 @@
+
 .logo{
     display: flex;
     justify-content: flex-start;
@@ -10,26 +11,29 @@
     height: 200px;
     width: 200px;
     border-radius: 1100px;
-    background-color: black;
+    background-color: rgb(44, 44, 44);
 }
 
 .pLogo{
     font-size: 50px;
-    margin-left: 300px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #principal{
     min-height: 100hv;
-    background-image: url(/assets/pictures/starry-sky-2675322_1280.jpg);
+    background-color: black;
     background-size: cover;
 }
 
 .container{
     display: grid;
     grid-gap: 5px;
-    grid-template-areas: "header header header header" 
-    "sidebar main main photo"
-    "footer footer footer footer";
+    grid-template-areas: "header header" 
+    "main main"
+    "footer footer";
     justify-content: center;
     grid-template-areas: repeat(auto-fit, minmax(150px, 1fr));
 }
@@ -43,6 +47,8 @@
 }
 
 .header{
+    margin: 0;
+    padding: 0;
     grid-area: header;
     font-size: 200px;
     color: aliceblue;
@@ -52,16 +58,15 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-style: italic;
-}
-
-.sidebar{
-    grid-area: sidebar;
-    background-color: rgb(243, 235, 235);
-    color: black;
+    background-color: rgb(17, 17, 17);
 }
 
 .main{
     grid-area: main;
+}
+
+.main p {
+    clear: left;
 }
 
 .footer{
@@ -76,12 +81,20 @@
     font-style: italic;
     background-image: url(/assets/pictures/background-img.jpeg);
 }
- 
-   
+ .footer p{
+    display: flex;
+    align-items: center;
 
+ }
 .photo{
     grid-area: photo;
    
+}
+
+.imgMain{
+    padding: 5px;
+    background-color: rgb(15, 15, 15);
+    float: right;
 }
 
 .imgFooter{
@@ -91,7 +104,7 @@
     padding: 3px;
     background-color: rgb(219, 194, 243);
 }
-    
+
 button{
     background-color: black;
     cursor: pointer;
@@ -131,4 +144,9 @@ button::before{
 
         background-position: 0;
     }
+}
+
+.button a{
+    color: rgb(247, 157, 247);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
